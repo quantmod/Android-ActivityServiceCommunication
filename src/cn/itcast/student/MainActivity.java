@@ -51,7 +51,14 @@ public class MainActivity extends Activity {
 
 	private final class ButtonClickListener implements View.OnClickListener{
 		public void onClick(View v) {
-			 
+			
+		/*	  try {
+	   			//超过5s会报 ANR (“Application Not Responding”)错误
+	   			Thread.sleep(20000);
+	   		} catch (InterruptedException e) {
+	   			e.printStackTrace();
+	   		}
+		  */	 
 			
 			System.out.println(Thread.currentThread().getName());
 			String no = studentno.getText().toString();
