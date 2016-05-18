@@ -13,8 +13,6 @@ public class StudentService extends Service{
 		
 	/*	  try {
 	   			//超过5s会报 ANR (“Application Not Responding”)错误
-	   			//同一个apk下面的service和Activity没有特殊的情况下，一般是在同一个进程的同一个线程里面的。
-	   			//都在主UI线程，这就是为什么我们在service的onstart onbind中不能做延时较长的操作。 
 	   			Thread.sleep(20000);
 	   		} catch (InterruptedException e) {
 	   			e.printStackTrace();
